@@ -22,14 +22,12 @@
     <p>Já me livrei da maldição</p>
 
     <script>
-        //JANELA DE ALERTA PARA DAR UM 'OK'
-        window.alert ("Minha mensagem em JavaScript");
-
-        //JANELA DE CONFIRMACAO PARA CANCELAR OU CONFIRMAR
-        window.confirm ("Está gostando de JavaScript?");
-
-        //JANELA DE INTERACAO COM O USUARIO COLOCANDO O NOME OU ALGO DO TIPO
-        window.prompt ("Qual o seu nome?");
+        //POSSO COLOCAR O Number.parseInt() OU Number.parseFloat() QUE VAI DAR CERTO
+        var n1 = Number(window.prompt ('Digite o primeiro número: '))
+        
+        var n2 = Number(window.prompt('Digite o segundo número: '))
+        var soma = n1 + n2 //O (NUMBER + NUMBER) PARA ADICAO
+        window.alert (`A soma de ${n1} e ${n2} e ${soma}`)//O (STRING + STRING) PARA CONCATENACAO
     </script>
 </body>
 </html>
