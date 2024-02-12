@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos em DOM</title>
+    <style>
+        body {
+            background-color: rgb(26, 128, 211);
+            color: azure;
+            font-family: Arial, sans-serif;
+            font-size: 16pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos em DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JS</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName("p")[1]
+        var corpo = window.document.body
+        
+        window.document.write ("Está escrito no primeiro parágrafo assim.. " + p1.innerText)
+        /*corpo.style.background = "black"*/
+        p1.style.color = 'green'
+
+        document.write(p1.innerHTML)/*innerText vai pegar somente o texto já o innerHtml vai pegar as formatações também*/
+        
+        /*selecionado a div pelo id 
+        var d = window.document.getElementById('msg')
+        /*DESSE JEITO
+        d.innerText = "Selecionado: Id"
+        */
+
+        /*OU DESSE JEITO*/
+        //window.document.getElementById('msg').innerText = "Olá"
+
+        /*selecionando pelo name
+        var dv = window.document.getElementsByName("msg")[0]
+        dv.innerText = "Selecionado Name"
+        */
+
+        /*selecionando pela classe
+        var div = window.document.getElementsByClassName('msg')[0]
+        div.innerText = "Selecionado: Class"*/
+
+        /*Selecionando por seletor*/
+        var d = window.document.querySelector('div#msg')//Igual no css
+        d.innerText = "Selecionado Id pelo querySelector"
+        d.style.color = "Yellow"
+        d.style.background = "blue"
+    </script>
+</body>
+</html>
