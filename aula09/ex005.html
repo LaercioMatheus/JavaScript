@@ -19,6 +19,7 @@
     <p>Aprendendo a usar o <strong>DOM</strong> em JS</p>
     <div id="msg">Clique em mim</div>
     <script>
+        /*SELEÇÃO DE ELEMENTOS POR NOME, ID E CLASSE*/
         var p1 = window.document.getElementsByTagName("p")[1]
         var corpo = window.document.body
         
@@ -28,8 +29,10 @@
 
         document.write(p1.innerHTML)/*innerText vai pegar somente o texto já o innerHtml vai pegar as formatações também*/
         
+
         /*selecionado a div pelo id 
         var d = window.document.getElementById('msg')
+
         /*DESSE JEITO
         d.innerText = "Selecionado: Id"
         */
@@ -37,17 +40,20 @@
         /*OU DESSE JEITO*/
         //window.document.getElementById('msg').innerText = "Olá"
 
+
         /*selecionando pelo name
         var dv = window.document.getElementsByName("msg")[0]
         dv.innerText = "Selecionado Name"
         */
 
+
         /*selecionando pela classe
         var div = window.document.getElementsByClassName('msg')[0]
         div.innerText = "Selecionado: Class"*/
 
+        
         /*Selecionando por seletor*/
-        var d = window.document.querySelector('div#msg')//Igual no css
+        var d = window.document.querySelector('div#msg')//Igual no css ponto ou hashtag
         d.innerText = "Selecionado Id pelo querySelector"
         d.style.color = "Yellow"
         d.style.background = "blue"
