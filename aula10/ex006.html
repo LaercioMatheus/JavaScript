@@ -11,8 +11,10 @@
             color: wheat;
             width: 200px;
             height: 200px;
-            line-height: 200px;
+            line-height: 200px;/*O mesmo valor da altura*/
             text-align: center;
+            cursor: pointer;/*Ficar com o ponteiro do mouse com a mãozinha*/
+            border-radius: 25px;
         }
     </style>
 </head>
@@ -23,9 +25,18 @@
 
     <script>
         var a = window.document.getElementById('area')
+
+    /*ESSE EVENTOS ABAIXO ESTÃO NA PARTE DO JAVASCRIPT PARA EVITAR O EXESSO DE ELEMENTOS DENTRO DA DIV area*/    
+        //o evento quando clicar
         a.addEventListener('click', clicar)
+        
+        //o evento quando passar o mouse dentro da div
         a.addEventListener('mouseenter', entrar)
+
+        //o evento quando o mouse sair da delimitação da div
         a.addEventListener('mouseout', sair)
+
+        //As funções dos eventos acima
         function clicar() {
             /*aqui vai ser uma ligação da variavel a com o id area*/
             // var a = window.document.getElementById('area')

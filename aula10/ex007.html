@@ -12,9 +12,17 @@
         input {
             font: normal 18pt Arial;
             width: 100px;
+            background-color: rgba(233, 233, 63, 0.719);
         }
+
+        input.btn {
+            background-color: goldenrod;
+            color: steelblue;
+        }
+
         div#res {
             margin-top: 20px;
+            color: darkorange;
         }
     </style>
 </head>
@@ -22,7 +30,7 @@
     <h1>Somando Valores</h1>
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="somar()">
+    <input type="button" value="Somar" onclick="somar()" class="btn">
     <div id="res">Resultado.</div>
 
     <script>
