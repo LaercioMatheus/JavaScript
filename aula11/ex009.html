@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeroporto de BsB</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+
+    Informe o seu país: <input type="text" name="pais" id="pais">
+    
+    <input type="button" value="Analizar" onclick="analizar()">
+   
+    <div id="busca">
+
+    </div>
+    
+    <script>
+        function analizar() {
+            var pais = window.document.querySelector('input#pais')
+
+            var res = window.document.querySelector('div#busca')
+
+            res.innerHTML = `O seu país é ${pais}`
+        }
+    </script>
+</body>
+</html>
