@@ -20,14 +20,19 @@
     <div id="msg">Clique em mim</div>
     <script>
         /*SELEÇÃO DE ELEMENTOS POR NOME, ID E CLASSE*/
-        var p1 = window.document.getElementsByTagName("p")[1]
+        var p1 = window.document.getElementsByTagName("p")[1]//o cochete no final é para indicar a posição do elemento de acordo com a ordem de cima para baixo
         var corpo = window.document.body
 
         window.document.write ("Está escrito no primeiro parágrafo assim.. " + p1.innerText + "<br>.")
+
+        //mudando a cor do fundo do site
         /*corpo.style.background = "black"*/
+
+        //mudando a cor da fonte do site
         p1.style.color = 'green'
 
-        document.write(p1.innerHTML)/*innerText vai pegar somente o texto já o innerHtml vai pegar as formatações também*/
+        document.write(p1.innerHTML)
+        /*innerText vai pegar somente o texto, já o innerHtml vai pegar as formatações também*/
         
 
         /*selecionado a div pelo id 
@@ -57,6 +62,9 @@
         d.innerText = "Selecionado Id pelo querySelector"
         d.style.color = "Yellow"
         d.style.background = "blue"
+
+        /*acessar a url
+        window.document.write(window.document.URL)*/
     </script>
 </body>
 </html>

@@ -3,26 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aeroporto de BsB</title>
+    <title>Aeroporto BsB</title>
+
+    <style>
+        body {
+            font: 18pr;
+            background-color: darkkhaki;
+        }
+
+        input {
+            color: royalblue;
+            background-color: yellowgreen;
+            font: normal 14pt Arial;
+        }
+    </style>
 </head>
 <body>
-    <h1>Sistema de Nacionalidade</h1>
+    <h1>Analista de Nacionalidade</h1>
 
-    Informe o seu país: <input type="text" name="pais" id="pais">
-    
-    <input type="button" value="Analizar" onclick="analizar()">
-   
-    <div id="busca">
+    Informe o seu pais: <input type="text" name="pais" id="pais">
+    <input type="button" value="Analisar" onclick="analisar()">
+    <div id="res">
 
     </div>
-    
+
     <script>
-        function analizar() {
-            var pais = window.document.querySelector('input#pais')
+        function analisar() {
+            /*Pegando os valores*/
+            var pais = window.document.getElementById('pais').value
+            //PRECISO COLOCAR O ELEMENTO 'value' PARA PEGAR O ELEMENTO E NÃO RETORNAR O ELEMENTO [EXTREMA IMPORTÂNCIA]
 
-            var res = window.document.querySelector('div#busca')
+            var res = window.document.querySelector('div#res')
 
-            res.innerHTML = `O seu país é ${pais}`
+            /*Mostrando eles na div*/
+            res.innerHTML = `<p>Olá!! Você vive em ${pais}</p>`
+
+            if (pais == 'Brasil') {
+                res.innerHTML += '<p>Você é uma pessoa Brasileira!</p>'
+            }
+            res.innerHTML += `Bem Vindo! :)`
         }
     </script>
 </body>
