@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(27, 61, 80);
+    font: 15pt Arial normal;
+}
+
+header {
+    color: beige;
+    text-align: center;
+}
+
+section {
+    background-color: beige;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.904)
+}
+
+div {
+    text-align: center;
+    font-family: 'Trebuchet MS','Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 8px;
+}
+
+input {
+    background-color: rgb(197, 235, 110);
+    font: 12pt Arial;
+    color: darkslategrey;
+    border-radius: 5px;
+}
+
+img {
+    padding: 10px;
+}
+
+footer {
+    color: beige;
+    text-align: center;
+    font-style: italic;
+}
