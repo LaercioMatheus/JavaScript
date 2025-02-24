@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxo de Execução</title>
+</head>
+<body>
+    <h2>Estruturas de condição</h2>
+    <script>
+        console.log('Início do script');
+
+        // if (80 >= 45 && 77 == 77) {
+        //     console.log('Condição verdadeira');
+        // } else {
+        //     console.log('Condição falsa')
+        // }
+
+        // Poderia ser escrito assim, se o bloco tiver apenas uma linha
+        /* if (true) console.log('Condição verdadeira com somente uma linha'); */
+
+
+
+        // if (!(1 < 2)) {
+        //      console.log('Condição 1');
+        // } else {
+        //     // Essa parte é como se fosse uma resposta ao usuário
+        //     console.log('Condição 2');
+        // }
+
+        // console.log('Fim do script');
+
+        // Operador Ternário
+        // Subistitui o if e else
+        let idade = 19;
+        let status
+
+        /* variável = (condição) ? IF : ELSE */
+        status = (idade >= 18) ? 'Maior de idade' : 'Menor de idade';
+
+        console.log(status);
+
+        status == "19" ? console.log("SE") : console.log("SENÃO");
+
+        // Switch Case
+        let dia = 2;
+
+        switch (dia) {
+            case 1:
+                console.log('Domingo');
+                break;
+            case 2:
+                console.log('Segunda-feira');
+                break;
+            case 3:
+                console.log('Terça-feira');
+                break;
+            case 4:
+            case 5:
+                console.log('Quarta ou Quinta-feira');
+                break;
+            default:
+                break;
+        }
+    </script>
+</body>
+</html>

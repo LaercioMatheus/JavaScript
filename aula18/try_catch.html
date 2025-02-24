@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try e Catch</title>
+</head>
+<body>
+    <h2>Estruturas de erros</h2>
+
+    <script>
+        /* Serve como se fosse um IF ELSE, mas lidando com os erros do site */
+        // O uso do 'try' e 'catch' é para tratar erros de serviços externos, como APIs, Banco de Dados, servidor, etc.
+
+
+        /** IF EXECUTA ESSE BLOCO **/
+        try {
+            // executa um bloco de código
+            // consulta de APIs, Banco da Dados, arquivos, etc
+            console.log("Consultando um Banco de Dados... ");
+            // con.select("clientes"); // ponto de falha
+
+            // Dando esse erro aqui no 'try', ele vai cair no 'catch'
+
+            // Esse throw é elemento que dispara os erros 'catch'
+            throw 'Erro (1032) de conexão com o Banco de Dados';
+
+            /** ELSE DEU ERRO EXECUTA ESSE BLOCO **/
+        } catch (error) {
+            // trata o erro
+
+            // Isso vai mostrar para o usuário do sistema
+            // alert('Ocorreu um erro inesperado. Por favor, fale com o suporte.');
+
+            // Isso vai mostrar dentro do console o erro que ocorreu (técnico)
+            console.error(error);
+
+            /** SEMPRE EXECUTA MESMO COM OS ERROS **/
+        } finally {
+            // sempre executa ao final dos dois blocos o 'try' e o 'catch' (isso é opcional)
+
+            console.log('Finalizando a consulta ao Banco de Dados... (finally)');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Curso de JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>JavaScript</h1>
+    </header>
+    <section>
+
+        <div>
+          
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; Curso Samurai</p>
+    </footer>
+
+    <script>
+        // No JavaScript, tudo que for vazio é considerado falso
+        // E tudo que tiver conteúdo é considerado verdadeiro
+
+        console.log(0 ? "verdadeiro" : "falso"); // falso
+        console.log(1 ? "verdadeiro" : "falso"); // verdadeiro
+        console.log("joao" ? "verdadeiro" : "falso"); // verdadeiro
+
+
+        // Operadores Lógicos
+        // && - E
+        // || - OU
+
+        /* OR */
+        console.log(false || false); // false
+        console.log(true || false); // true
+        console.log(false || true); // true
+        console.log(true || true); // true
+
+        console.log("joao" || "maria"); // joao
+        /* AND */
+        console.log(false && false); // false
+        console.log(true && false); // false
+        console.log(false && true); // false
+        console.log(true && true); // true
+
+        console.log(false && false); // false
+
+        console.log(false || false || true ); // true
+
+        console.log(false || (false && true) ); // false
+        console.log(false && (true || true) ); // true
+
+
+        // Operador de negação
+        console.log(!true); // false
+        console.log(!false); // true
+        console.log(!(23 < 24) && "s" == "s"); // false
+
+
+        console.log(23 < 24 && "s" == "s"); // true
+
+        // Usando variáveis
+        let a = 10;
+        let b = 80;
+
+        console.log(!(a > b)); // true
+        console.log(a > b); // false
+        
+    </script>
+</body>
+</html>
