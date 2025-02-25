@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de Repetição</title>
+</head>
+<body>
+    <script>
+        // Enquanto algo (a condição dentro do comando) for VERDADEIRO ele vai executar o bloco de código
+
+        // let i = 1; // Esse é o contador que vai ser usado para controlar o loop
+        // while (i <= 10) {
+        //     console.log(`executando. ${i}`);
+        //     i++;
+        // }
+        // console.log('Fim do loop while');
+
+
+        // Usando o FOR
+        // for (inicialização; condição; incremento) {
+        //      Aqui entra o código
+        // }
+
+        // for (let i = 1; i <= 17; i++) {
+        //     console.log(`-- ${i} --`);
+            
+        // }
+        // console.log('Fim do loop for');
+
+
+        // Usando o FOR COM ARRAY
+
+        const nomes = ['João', 'Maria', 'Laércio', 'Pedro', 'Ana', 'Carlos'];
+
+        // O length é a quantidade de elementos que o array possui, logo ele vai percorrer todos os elementos do array
+        for (let i = 0; i < nomes.length; i++) {
+            console.log(`Os nomes são: ${nomes[i]}`);
+        }
+        console.log('Fim do loop FOR com array');
+
+
+        // Usando o FOR OF
+        // O for in vai percorrer todos os elementos de um objeto
+        // vaI pegar o conteúdo das posições do array (De todas as posições)
+        for (const nome of nomes) {
+            console.log(`Usando o for of: ${nome}`);
+        }
+    </script>
+</body>
+</html>
