@@ -34,17 +34,36 @@
         const nomes = ['João', 'Maria', 'Laércio', 'Pedro', 'Ana', 'Carlos'];
 
         // O length é a quantidade de elementos que o array possui, logo ele vai percorrer todos os elementos do array
-        for (let i = 0; i < nomes.length; i++) {
-            console.log(`Os nomes são: ${nomes[i]}`);
+        // for (let i = 0; i < nomes.length; i++) {
+        //     console.log(`Os nomes são: ${nomes[i]}`);
+        // }
+        // console.log('Fim do loop FOR com array');
+
+
+        // // Usando o FOR OF
+        // // O for in vai percorrer todos os elementos de um objeto
+        // // vaI pegar o conteúdo das posições do array (De todas as posições)
+        // for (const nome of nomes) {
+        //     console.log(`Usando o for of: ${nome}`);
+        // }
+
+
+        // Usando o FOR IN
+        // Ele vai pegar o índice das posições do array ou seja a propriedade do objeto
+        const person = {
+            name: 'João',
+            age: 30,
+            weight: 88.6,
+            city: 'São Paulo'
         }
-        console.log('Fim do loop FOR com array');
 
+        // UM OBJETO PODE SER ACESSADO DE DUAS FORMAS
+        // 1. obj.prop -> como objeto
+        // 2. obj['prop'] -> como String em um array
 
-        // Usando o FOR OF
-        // O for in vai percorrer todos os elementos de um objeto
-        // vaI pegar o conteúdo das posições do array (De todas as posições)
-        for (const nome of nomes) {
-            console.log(`Usando o for of: ${nome}`);
+        for (const prop in person) {
+            // Se eu quiser pegar o valor do objeto eu coloco ${person[prop]}
+            console.log(`Prop: ${prop} - ${person[prop]}`);
         }
     </script>
 </body>

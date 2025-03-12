@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções em JS</title>
+</head>
+<body>
+    <script>
+        // function sayHello() {
+        //     console.log('Olá, Hello World, Welcome to JS');
+
+        //     //posso colocar mais códigos
+        // }
+
+        // // Esse é o jeito de chamar a função e eu posso chamar quantas vezes eu quiser
+        // sayHello()
+        // sayHello()
+        // sayHello()
+
+        // As funções podem receber parâmetros dentro dos parênteses
+        // Esses parâmetros viram variáveis dentro da função
+        function sayHello(name, lastname) {
+            console.log(`Olá, ${name}, ${lastname} Welcome to JS`);
+        }
+
+        // Para passar o parâmetro, eu coloco o valor dentro dos parênteses
+        // Eu tenho que passar o parâmetro da onde eu chamo a função *****
+        // Posso adcionar os parâmetros separando eles por vírgula como abaixo
+        sayHello('Lucas', 'Gomes')
+        sayHello('João', 'Pedro')
+        sayHello('Maria', 'Silva')
+    </script>
+</body>
+</html>
