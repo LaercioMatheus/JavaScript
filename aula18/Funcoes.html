@@ -30,6 +30,25 @@
         sayHello('Lucas', 'Gomes')
         sayHello('João', 'Pedro')
         sayHello('Maria', 'Silva')
+
+       
+        // Arrow funcion vai ser feita dessa forma alterando a FUNCTION por '=>'
+        // poss o retirar as chaves, mas SE EU NÃO FOR USAR AS CHAVES EU POSSO RETIRAR O 'RETURN'. SE EU USAR COM AS CHAVES EU PRECISO COLOCAR AS CHAVES
+        
+        // COM AS CHAVES
+        const arrowF = (n) => {
+            n *= n
+            return n
+        }
+
+        console.log('com as chaves')
+        console.log(arrowF(5))
+
+        // SEM AS CHAVES
+        const Farrow = (n) => (n *= n)
+
+        console.log('sem as chaves')
+        console.log(Farrow(11))
     </script>
 </body>
 </html>

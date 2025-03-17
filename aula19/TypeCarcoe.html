@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types casting and coersion</title>
+</head>
+<body>
+    <script>
+        // Type casting - Convertendo pelo usuário
+        // Type coesrsion - Conversão 'coercitiva' pela VM
+
+        console.log("2" + 2)
+        console.log(Number("2") + 2)
+
+        // Posso usar as funções 'String' e 'Number' para converter os tipos de dados
+        console.log(typeof String(7))
+        console.log(Number("d")) //NaN
+
+        // Convertendo Boolean para String
+        console.log(String(true))
+        console.log(Boolean("tem valor")) // String cheia -> 'true'
+        console.log(Boolean("")) // String vazia -> 'false'
+
+        // Convertendo Datas
+        console.log(new Date()) // Definindo uma data padrão do sistema
+        console.log(new Date().toString()) // usando o formato Strong
+        console.log(new Date().toISOString()) // usando o formato ISO
+
+        // Convertendo String para Array
+        let name = "Laércio Matheus"
+
+        // Mostrando o valor da string a vestical
+        // for (const most of name) {
+        //     console.log(most)
+        // }
+
+        console.log(name[0])
+        console.log(name.length + ' letaras') // Mostra o tamanho da string
+
+
+        // Usando o Join
+        // let letras = ["M","A","T","H","E","U","S"]
+        let num = [1,2,3,4,5,6,7]
+        console.log(num.join(",")) // Posso usar ele para colocar caracteres entre os valores da string
+
+        // Usando o Split
+        // let letras = ["M","A","T","H","E","U","S"]
+
+        console.log(name.split(" ")) // Posso usar ele para separar caracteres da variavel em várias posicoes em array
+
+    </script>
+</body>
+</html>

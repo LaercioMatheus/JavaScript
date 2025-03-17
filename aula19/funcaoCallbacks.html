@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callbacks</title>
+</head>
+<body>
+    <script>
+
+        // Função callback serve para fazer operações com arrays de elementos numericos
+        
+        // Essa é a função de callback padrão        
+
+        // function mult(values) {
+        //     for (let i = 0; i < values.length; i++) {
+        //         values[i] *= values[i] // n *= n // Multiplicar por ele mesmo
+        //     }
+
+        //     return values
+        // }
+
+        // const values = [1,2,3,4,5,41,22,5]
+
+        // console.log(mult(values))
+
+
+
+        // Posso alterar para o usuário poder escolher os atribultos e o tipo de operação desses atribultos
+        function call(values, func) {
+
+            console.log(arguments)
+
+            for (let i = 0; i < values.length; i++) {
+                values[i] = func(values[i])
+            }
+
+            return values
+        }
+
+        const values = [1,2,4,6,8,10]
+        const func = (n) => n * 10 // Aqui eu posso decidir qual valor e operação vou fazer com os valores do array
+
+        // Isso é uma callback: -> map, filter. reduce
+        // chama a função 'func' e retorno na mesma função, executa e mostro o resultado
+
+        console.log(call(values, func)) // Posso passar valores e diretamente funções
+    </script>
+</body>
+</html>
