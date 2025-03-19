@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Strings</title>
+</head>
+<body>
+    <script>
+        let name = "Laercio Math"
+        let number = 16548
+
+        console.log((name).length)
+
+        // Posso converter o tipo de variável para conseguir contar a quantida de caracteres tem a variável
+        console.log(String(number).length)
+
+        /* TRABALHANDO COM STRINGS*/
+
+        let frase = "Eu sou um jovem muito legal ;)"
+
+        // Posso usar o SPLIT junto com o JOIN para transformar a string em array e definir o tipo de caractere vai ser usado para separar
+
+        // Split serve para separar a string em array onde o valor dela tem na string
+        // Join serve para colocar caracteres onde é separado os caracteres da string
+        
+        // Isso serve para interagir com sistemas e ajudar pegar dados de uma API
+        console.log(frase.split(" ").join("_"))
+
+
+        /* STRINGS EM LETRAS MAIÚSCULAS E MINÚSCULAS */
+        let trecho = "Trabalhando com strings dentro do JavaScript!"
+
+        console.log(trecho.toLowerCase()) // Colocando todas as letras em minúsculas
+        console.log(trecho.toUpperCase()) // Colocando todas as letras em maiúculas
+
+
+        /* LOCALIZANDO VALORES DENTRO DE STRINGS */
+
+        console.log(trecho.includes("JavaScript")) // Posso usar o includes para encontrar caracteres e palavras dentro de uma string
+
+        console.log(trecho.toLowerCase().includes("javascript")) // E posso usar junto com o toLower para padronizar os caracteres facilitando a busca dentro da string
+
+
+        /* SUBSTITUÍNDO VALORES DENTRO DE STRINGS */
+        
+        // Posso usar o replace para substituir valores dentro de uma string
+
+        console.log(trecho.replace('Trabalhando com', 'Manipulando'))
+        // R: Manipulando strings dentro do JavaScript!
+
+        // Posso alterar números
+        let num1 = 1468.375
+
+        console.log(num1.toFixed(2).replace('.', ',')) // fixando o valor com duas casas decimais e alterando o ponto pela a vírgula
+        // R: 1468,38
+
+
+    </script>
+</body>
+</html>
